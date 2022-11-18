@@ -28,13 +28,19 @@ pip install -r requirements.txt
 The program `settings.py ` there are environment variables in the `project` folder that are responsible for configuring access to the database.
 create a `.env` file, place it in the root directory of the program. Put the following data in the `.env` file in the `key=value` format.
 
-`HOST=` - web address of the Database connection point, for example `site.domain.ru`.                                             
-`PORT=` - Database server port, for example `1234`.                                                                                                                          
-`NAME=` - Database name.                                                       
-`USER=` - Database user name.                                                                                                                                                           
-`PASSWORD=` - Database user password.                 
+`DB_HOST=` - web address of the Database connection point, for example `site.domain.ru`.                                             
+`DB_PORT=` - Database server port, for example `1234`.                                                                                                                          
+`DB_NAME=` - Database name.                                                       
+`DB_USER=` - Database user name.                                                                                                                                                           
+`DB_PASSWORD=` - Database user password.                 
 `SECRET_KEY=` - Django secret key.              
-`DEBUG=` - True for enabling debugging mode, False for production.
+`DEBUG=` - True for enabling debugging mode, False for production. The default value is `False`.
+`ALLOWED_HOSTS=` - This is a security measure to prevent HTTP Host header attacks, which are possible even under many seemingly-safe web server configurations.
+Example of ALLOWED_HOSTS settings in file. env - `ALLOWED_HOSTS = ['www.djangoproject.dev', 'docs.djangoproject.dev', 'localhost' ...]`. Where
+`www.djangoproject.dev', 'docs.djangoproject.dev, 'localhost'` -  addresses of allowed hosts. The default value is `localhost`.                                                  
+                                                    
+                                                        
+                                                    
 
 ### How to run the program:
 
