@@ -34,7 +34,7 @@ create a `.env` file, place it in the root directory of the program. Put the fol
 `DB_USER=` - Database user name.                                                                                                                                                           
 `DB_PASSWORD=` - Database user password.                 
 `SECRET_KEY=` - Django secret key.              
-`DEBUG=` - True for enabling debugging mode, False for production. The default value is `False`.
+`DEBUG=` - True for enabling debugging mode, False for production. The default value is `False`.                                                         
 `ALLOWED_HOSTS=` - This is a security measure to prevent HTTP Host header attacks, which are possible even under many seemingly-safe web server configurations.
 Example of ALLOWED_HOSTS settings in file. env - `ALLOWED_HOSTS = ['www.djangoproject.dev', 'docs.djangoproject.dev', 'localhost' ...]`. Where
 `www.djangoproject.dev', 'docs.djangoproject.dev, 'localhost'` -  addresses of allowed hosts. The default value is `localhost`.                                                  
